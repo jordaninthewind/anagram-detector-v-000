@@ -5,13 +5,10 @@ attr_accessor :word
 
   def initialize(word)
     @word = word
-    self.match
   end
 
-  def match
-    @array.
-
-
+  def match(array)
+    array.each {|i| i.chars.sort == @word.chars.sort ? return i : next }
   end
 
 end
