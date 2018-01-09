@@ -8,9 +8,7 @@ attr_accessor :word
   end
 
   def match(array)
-    array.collect do |i|
-      if i.chars.sort == @word.chars.sort
-        i
+    array.collect do { |i| i if i.chars.sort == @word.chars.sort }.compact
       end
     end
   end
