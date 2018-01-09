@@ -8,7 +8,7 @@ attr_accessor :word
   end
 
   def match(array)
-    array.each {|i| i.chars.sort == @word.chars.sort ? return i : next }
+    array.each { |i| i.chars.sort == @word.chars.sort ? i : next }
   end
 
 end
