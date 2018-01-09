@@ -3,6 +3,13 @@ class Anagram
 
 attr_accessor
 
-def match(array)
+  def initialize
+
+  end
+
+  def match(array)
+
+
+  end
 
 end
