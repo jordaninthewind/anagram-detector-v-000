@@ -3,7 +3,7 @@ class Anagram
 
 attr_accessor
 
-  def initialize
+  def initialize(array)
 
   end
 
